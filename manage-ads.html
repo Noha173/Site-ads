@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إدارة إعلاناتي</title>
+  <style>
+    .ad {
+      border: 1px solid #ddd;
+      margin: 20px;
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>إدارة إعلاناتي</h1>
+  <nav>
+    <a href="index.html">الرئيسية</a> | 
+    <a href="post-ad.html">نشر إعلان</a>
+  </nav>
+</header>
+<div class="container">
+  <div class="ad">
+    <h3>عنوان الإعلان: منتوج 1</h3>
+    <img src="image1.jpg" alt="صورة المنتج" width="200">
+    <p>وصف: هذا وصف الإعلان...</p>
+    <form action="/update-ad" method="POST" enctype="multipart/form-data">
+      <label>تغيير الصور:</label>
+      <input type="file" name="images[]" accept="image/*" multiple><br><br>
+      <button type="submit">حفظ التغييرات</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
